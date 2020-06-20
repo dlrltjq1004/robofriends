@@ -1,14 +1,16 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import "./index.css";
-import Card from "./Card";
-import * as serviceWorker from "./serviceWorker";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import CardList from './CardList';
+import * as serviceWorker from './serviceWorker';
+import 'tachyons';
+import { robots } from './robots';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Card />
+    <CardList robots={robots} />
   </React.StrictMode>,
-  document.getElementById("root")
+  document.getElementById('root')
 );
 
 // If you want your app to work offline and load faster, you can change
